@@ -12,7 +12,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { CreateOrderComponent } from './views/create-order/create-order.component';
-import { ListOrderComponent } from './views/list-order/list-order.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+
 
 @NgModule({
   declarations: [
@@ -21,8 +28,8 @@ import { ListOrderComponent } from './views/list-order/list-order.component';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    CreateOrderComponent,
-    ListOrderComponent,
+    CreateOrderComponent,   
+    
     
   ],
   imports: [
@@ -31,7 +38,16 @@ import { ListOrderComponent } from './views/list-order/list-order.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule,
+    FormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
